@@ -5,20 +5,29 @@
     <meta charset="utf-8"/>
   </head>
   <body>
-    <h1>Temperature Evaluator</h1>
-    <p>This simple Web application allows you to enter the current temperature, in degrees Fahrenheit, and will then assesses whether it is hot, cold, or some other appropriate adjective.</p>
+    <h1>Heat Index Evaluator</h1>
+    <p>This simple Web application allows you to enter the current temperature, in degrees Fahrenheit, and the humidity as a percentage. Then it assesses whether it is hot, cold, or some other appropriate adjective.</p>
     <form onsubmit="return false;">
       <label>
         Temp (F&deg;)
         <input type="number" id="tempInput" value="0" />
       </label>
+      <br/>
+      <label>
+          Humidity (%)
+          <input type="percentage" id="humidInput" value="0" />
+      </label>
+      <br/>
       <button onclick="assessTemperature();">Evaluate</button>
-      <output id="result"></output>
+      <br/>
+      <output id="tempResult"></output>
+      <br/>
+      <output id="humidResult"></output>
     </form>
     <script>
       function assessTemperature() {
         var inputElem = document.querySelector('#tempInput');
-        var outputElem = document.querySelector('#result');
+        var outputElem = document.querySelector('#tempResult');
         var temp = inputElem.value;
         var feel;
 
@@ -38,4 +47,3 @@
     </script>
   </body>
 </html>
-
