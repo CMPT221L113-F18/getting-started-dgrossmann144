@@ -1,0 +1,50 @@
+body {
+    background-color: #699bea;
+    font-family: verdana;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 300%;
+    border: 2px solid #1d6ae5;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 120%;
+    padding-right: 500px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: -50px;
+    border: 2px solid #1d6ae5;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 25px;
+}
+
+form {
+    font-size: 100%;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 75px;
+    border: 2px solid #1d6ae5;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 35px;
+}
+
+#tempInput {
+    margin-left: 38px;
+}
+
+#humidInput {
+    margin-left: 10px;
+}
